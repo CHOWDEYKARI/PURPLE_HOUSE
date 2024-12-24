@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Metirials</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Construction Company Website Template" name="keywords">
+    <meta content="Construction Company Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #ff9a8b, #f4c2c2, #d9a7c7);
+            animation: backgroundBlink 5s infinite alternate;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 20px;
+            color: blue;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid red;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: headerBlink 2s infinite alternate;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        /* Carousel Container */
+        .carousel-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .carousel-container img, .carousel-container video {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 3px solid red;
+            animation: fadeIn 2s ease-in, slideIn 1s ease-out;
+        }
+
+        .carousel-container img:hover, .carousel-container video:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+        }
+
+        /* Content Section Styling */
+        .content-section {
+            padding: 40px;
+            background-color: rgba(148, 228, 19, 0.9);
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid red;
+        }
+
+        .content-section h2 {
+            font-size: 2.5em;
+            color: blue;
+        }
+
+        .content-section p {
+            font-size: 1.1em;
+            color: purple;
+            line-height: 1.6;
+        }
+        .content-section li {
+            font-size: 1.1em;
+            color: blue;
+            line-height: 1.6;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes backgroundBlink {
+            0% { background: linear-gradient(to right, #ff7e5f, #feb47b); }
+            50% { background: linear-gradient(to right, #ff9a8b, #f4c2c2); }
+            100% { background: linear-gradient(to right, #d9a7c7, #ff7e5f); }
+        }
+
+        @keyframes headerBlink {
+            0% { background-color: rgba(0, 0, 0, 0.7); }
+            100% { background-color: rgba(0, 0, 0, 0.9); }
+        }
+
+        @keyframes footerBlink {
+            0% { background-color: rgba(0, 0, 0, 0.8); }
+            100% { background-color: rgba(0, 0, 0, 1); }
+        }
+
+        @keyframes speechButtonBlink {
+            0% { background-color: #ff7e5f; }
+            100% { background-color: #feb47b; }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .carousel-container img, .carousel-container video {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html"><img src="./logo2.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Opening Hours</h3>
+                                        <p>Mon To Fri.<br> 08:00 AM - 08:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Call Us</h3>
+                                        <p><a href="tel:+919848945713">+91 9848945713</a></p>
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-send-mail"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email Us</h3>
+                                        <p><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+                                    </div>
+                                    <!-- Share Location Section -->
+                                    <div class="top-bar-text">
+                                        <i class="fas fa-map-marker-alt icon"></i> <!-- Location Icon -->
+                                        <h3>Share Location</h3>
+                                        <p><a href="https://maps.app.goo.gl/eLEik9deA7rwNAaz5" target="_blank">Share Location</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="team.html" class="nav-item nav-link">Team</a>
+                            <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
+                                    <a href="single.html" class="dropdown-item">Single Page</a>
+                                </div>
+                            </div> -->
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <!-- Navbar Links -->
+                        <div class="links">
+                            <a href="./index.html" class="home">Home</a>
+                            <a href="./SignUpLogin.html" class="back">Back</a>
+                            <a href="./service.html" class="forward">Forward</a>
+                            <a href="./SignUpLogin.html" class="signup">SignUp/Login</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+    <header>
+        <h1>BUILDING MATERIALS</h1>
+    </header>
+    
+    <!-- Building Materials Section -->
+    <div class="content-section">
+        <h2>Introduction to Building Materials</h2>
+        <p>Building materials are essential elements used in the construction of various structures, ranging from homes to commercial buildings. These materials play a critical role in determining the durability, strength, aesthetics, and environmental impact of a construction project. The right choice of building materials ensures the safety, longevity, and efficiency of the structure.</p>
+    
+        <h3>Types of Building Materials</h3>
+        <p>There is a wide range of materials used in construction, each serving a specific purpose depending on the structure being built. Common types of building materials include:</p>
+    
+        <ul>
+            <li><strong>Concrete</strong>: Concrete is one of the most widely used construction materials. It is durable, fire-resistant, and can be molded into any shape. It is commonly used for foundations, walls, and floors.</li>
+            <li><strong>Wood</strong>: Wood is a versatile and renewable building material. It is used in framing, flooring, and roofing. Wood is known for its aesthetic appeal and ease of use, making it a popular choice for residential buildings.</li>
+            <li><strong>Steel</strong>: Steel is used for structural frameworks due to its strength and flexibility. It is ideal for high-rise buildings, bridges, and large-scale infrastructure projects.</li>
+            <li><strong>Brick</strong>: Brick is a traditional material that offers strength, durability, and insulation properties. It is commonly used in walls, facades, and chimneys.</li>
+            <li><strong>Glass</strong>: Glass is primarily used for windows and facades, offering transparency and natural light. Modern glass technology allows for energy-efficient options, such as double-glazed windows.</li>
+            <li><strong>Stone</strong>: Stone has been used in construction for centuries due to its durability and aesthetic appeal. It is commonly used in exterior facades, landscaping, and decorative elements.</li>
+            <li><strong>Insulation Materials</strong>: Materials such as fiberglass, foam, and cellulose are used to improve the energy efficiency of buildings by minimizing heat loss and sound transmission.</li>
+        </ul>
+    
+        <h3>Choosing the Right Building Materials</h3>
+        <p>The selection of building materials depends on several factors, including the type of structure, local climate, environmental impact, cost, and aesthetic preferences. Here are some key considerations when choosing materials:</p>
+        
+        <ul>
+            <li><strong>Strength and Durability</strong>: The materials should be strong enough to withstand the weight and stresses of the structure. Materials like steel and concrete are known for their durability, while wood and brick are suitable for specific applications.</li>
+            <li><strong>Environmental Impact</strong>: Sustainable materials, such as recycled steel, bamboo, and reclaimed wood, are increasingly popular due to their lower environmental impact. Using energy-efficient materials can also contribute to the sustainability of the building.</li>
+            <li><strong>Cost</strong>: Budget is a key factor in material selection. Some materials, like concrete and steel, may be more expensive, while others, like wood and brick, may be more cost-effective.</li>
+            <li><strong>Energy Efficiency</strong>: Materials that enhance the building’s energy efficiency, such as insulation materials, energy-efficient glass, and reflective roofing, help reduce heating and cooling costs over time.</li>
+            <li><strong>Aesthetic Appeal</strong>: The look and feel of materials can greatly affect the design of the structure. Materials like stone, wood, and glass can be selected based on the desired visual effect and architectural style.</li>
+        </ul>
+    
+        <h3>Innovations in Building Materials</h3>
+        <p>As construction technology advances, new materials are being developed to meet the growing demand for more sustainable, efficient, and high-performance buildings. Some of these innovations include:</p>
+    
+        <ul>
+            <li><strong>Self-Healing Concrete</strong>: Concrete that can repair its own cracks using bacteria or other chemical agents. This helps extend the lifespan of structures and reduces maintenance costs.</li>
+            <li><strong>Green Roofs</strong>: Roofs covered with vegetation that help insulate buildings, manage stormwater, and improve air quality. Green roofs are an eco-friendly solution gaining popularity in urban areas.</li>
+            <li><strong>3D-Printed Materials</strong>: 3D printing technology is being used to create customized building materials and even entire structures. This innovative method allows for greater precision and reduced waste.</li>
+            <li><strong>Nanomaterials</strong>: Nanotechnology is being used to create stronger, lighter, and more durable materials. These materials can also be self-cleaning or resistant to extreme weather conditions.</li>
+        </ul>
+    
+        <h3>Conclusion</h3>
+        <p>Choosing the right building materials is crucial for ensuring the safety, efficiency, and sustainability of construction projects. As technology and innovation continue to shape the industry, new materials will continue to emerge, offering enhanced performance, reduced environmental impact, and improved aesthetics for future buildings.</p>
+    </div>
+    
+<!-- GIF and Video Carousel -->
+<div class="carousel-container">
+    <!-- GIF Animations -->
+    <img src="./img/gif1.gif" alt="GIF 1">
+    <img src="./img/gif2.gif" alt="GIF 2">
+    <img src="./img/gif3.gif" alt="GIF 3">
+    <img src="./img/gif4.gif" alt="GIF 4">
+    <img src="./img/gif5.gif" alt="GIF 5">
+    <img src="./img/gif6.gif" alt="GIF 6">
+    <img src="./img/gif7.gif" alt="GIF 7">
+    <img src="./img/gif8.gif" alt="GIF 8">
+    </div>
+
+<div class="carousel-container">
+    <!-- Videos -->
+    <video autoplay muted loop>
+        <source src="./img/v1.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v2.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v3.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v4.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v5.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v6.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v7.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop>
+        <source src="./img/v8.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-contact">
+                    <h2>Office Contact</h2>
+                    <p><i class="fa fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/eLEik9deA7rwNAaz5" target="_blank">Share Location</a></p>
+                    <p><i class="fa fa-phone-alt"></i><a href="tel:+919848945713">+91 9848945713</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+                    <div class="footer-social">
+                        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-link">
+                    <h2>Services Areas</h2>
+                    <a href="BuildingMetirials.html">Building Metirials</a>
+                    <a href="House_Renovation.html">House Renovation</a>
+                    <a href="ArchitectureDesign.html">Architecture Design</a>
+                    <a href="InteriorDesign.html">Interior Design</a>
+                    <a href="#">Painting</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-link">
+                    <h2>Useful Pages</h2>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="portfolio.html">Projects</a>
+                    <a href="Testimonial.html">Testimonial</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Stay updated with the latest news, exclusive offers, and exciting updates by subscribing to our newsletter!</p>
+                    <div class="form">
+                        <footer class="footer">
+                            <div class="newsletter">
+                                <input class="form-control" placeholder="Email here" type="email" id="emailInput">
+                                <button class="btn" type="submit" id="sendMessageButton">Subscription</button>
+                                <div id="messageBox" class="message-box"></div>
+                            </div>
+                        </footer>
+                    
+                        <script>
+                            document.getElementById('sendMessageButton').addEventListener('click', function(e) {
+                                e.preventDefault(); // Prevent form submission
+                    
+                                var emailInput = document.getElementById('emailInput').value;
+                                var messageBox = document.getElementById('messageBox');
+                    
+                                // Show the message box
+                                messageBox.style.display = 'block';
+                    
+                                // Display the message
+                                if (emailInput) {
+                                    messageBox.textContent = "Thank you for subscribing!";
+                                } else {
+                                    messageBox.textContent = "Please enter a valid email.";
+                                }
+                    
+                                // Define the colors for blinking
+                                const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
+                                let colorIndex = 0;
+                    
+                                // Blinking effect
+                                let blinkInterval = setInterval(function() {
+                                    messageBox.style.color = colors[colorIndex]; // Change text color
+                                    colorIndex = (colorIndex + 1) % colors.length; // Cycle through colors
+                                }, 300); // Change color every 300ms
+                    
+                                // Stop blinking after 9 seconds and hide the message box
+                                setTimeout(function() {
+                                    clearInterval(blinkInterval); // Stop blinking
+                                    messageBox.style.display = 'none'; // Hide the message box
+                                }, 4000);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-menu">
+        <div class="f-menu">
+            <a href="TermsOfUse.html">Terms of use</a>
+            <a href="Privacy_Policy.html">Privacy policy</a>
+            <a href="FAQs.html">FAQs</a>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">Purple House</a> 2025 All Right Reserved.</p>
+            </div>
+
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <div class="col-md-6">
+                <p>Designed By <a href="#">MAHESHWER_CHOWDEYKARI</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="index.html" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

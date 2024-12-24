@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Renovation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Construction Company Website Template" name="keywords">
+    <meta content="Construction Company Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ffefba, #ffffff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #4a90e2, #ff6f61);
+            color: white;
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: blinkingText 1.5s infinite;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes blinkingText {
+            0%, 100% { color: #ffefba; }
+            50% { color: #ff6f61; }
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        section h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            color: #4a90e2;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            border-bottom: 3px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 5px solid transparent;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            animation: slideIn 1.5s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #ff6f61;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 10px;
+            text-align: center;
+            background: linear-gradient(45deg, #4a90e2, #ff6f61);
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .card video {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to right, #4a90e2, #ff6f61);
+            color: white;
+            font-size: 1rem;
+            animation: fadeIn 2s;
+        }
+
+        .voice-btn {
+            margin: 15px auto;
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .voice-btn:hover {
+            background: #ff6f61;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html"><img src="./logo2.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Opening Hours</h3>
+                                        <p>Mon To Fri.<br> 08:00 AM - 08:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Call Us</h3>
+                                        <p><a href="tel:+919848945713">+91 9848945713</a></p>
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-send-mail"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email Us</h3>
+                                        <p><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+                                    </div>
+                                    <!-- Share Location Section -->
+                                    <div class="top-bar-text">
+                                        <i class="fas fa-map-marker-alt icon"></i> <!-- Location Icon -->
+                                        <h3>Share Location</h3>
+                                        <p><a href="https://maps.app.goo.gl/eLEik9deA7rwNAaz5" target="_blank">Share Location</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="team.html" class="nav-item nav-link">Team</a>
+                            <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
+                                    <a href="single.html" class="dropdown-item">Single Page</a>
+                                </div>
+                            </div> -->
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <!-- Navbar Links -->
+                        <div class="links">
+                            <a href="./index.html" class="home">Home</a>
+                            <a href="./SignUpLogin.html" class="back">Back</a>
+                            <a href="./service.html" class="forward">Forward</a>
+                            <a href="./SignUpLogin.html" class="signup">SignUp/Login</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+    <header>
+        <h1>Architecture Design Services</h1>
+        <p>Our Architecture Design Services offer expert renovation solutions to transform your home.</p>
+        <button class="voice-btn" id="speakBtn">Listen to Our AI Guide</button>
+    </header>
+
+    <section id="introduction">
+        <h2>Welcome to Our Architecture Design Services</h2>
+        <p>Welcome to Our Architecture Design Services! Renovating your home is a significant step towards enhancing your living space, improving aesthetics, and boosting property value. We offer comprehensive services that cater to all your renovation needs, featuring innovative designs, high-quality materials, and skilled craftsmanship.</p>
+    </section>
+<hr>
+    <section id="gallery">
+        <h2>Key Features of Our Architecture Design</h2>
+        <p>Browse through our gallery to discover a variety of renovation projects we’ve brought to life:</p>
+</section>
+
+<section id="gallery">
+        <!-- Adding 8 GIFs -->
+        <div class="card">
+            <img src="./img/hr1.gif" alt="Living Room Renovation">
+            <h3>Living Room Transformation</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Modern_Kitchen.gif" alt="Kitchen Remodeling">
+            <h3>Modern Kitchen Ideas</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Luxury_Bathrooms.gif" alt="Bathroom Renovation">
+            <h3>Luxury Bathrooms</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Cozy_Bedrooms.gif" alt="Bedroom Makeover">
+            <h3>Cozy Bedrooms</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Beautiful_Exteriors.gif" alt="Outdoor Renovation">
+            <h3>Beautiful Exteriors</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Stylish_Gardens.gif" alt="Garden Design">
+            <h3>Stylish Gardens</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Smart_Home_Features.gif" alt="Smart Homes">
+            <h3>Smart Home Features</h3>
+        </div>
+        <div class="card">
+            <img src="./img/Elegant_Interiors.gif" alt="Interior Design">
+            <h3>Elegant Interiors</h3>
+        </div>
+
+        <!-- Adding 8 Videos -->
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/pmak0cL8cNM" title="✅ Interior Animation - House design ▶ (MAGIC FURNITURE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Modern Living Rooms</h3>
+        </div>
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/h1bDsIW8uUA" title="Luxury Kitchen Design, Gadgets &amp; Organization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Spacious Kitchens</h3>
+        </div>
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/16qggCDq-Ns" title="Luxury Bathroom Design |3D Walkthrough Animation | Interior Design" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Luxurious Bathrooms</h3>
+        </div>
+        <div class="card">
+            <iframe width="521" height="391" src="https://www.youtube.com/embed/pEpxLOP_IU4" title="3D Bedroom Design Walkthrough: Transform Your Space with Style" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Stylish Bedrooms</h3>
+        </div>
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/Y4BdE9qe8ig" title="Modern 3D Office Interior Design | Sleek &amp; Productive Workspace Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Productivity Workspaces</h3>
+        </div>
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/aI3R-3yAvm8" title="Elevated Enhancement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Outdoor Enhancements</h3>
+        </div>
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/diBLji1RdE4" title="Amazing Cottage Garden Design Animation | Full HD | Design by Lynne Marcus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Garden Makeovers</h3>
+        </div>
+        <div class="card">
+            <iframe width="695" height="391" src="https://www.youtube.com/embed/M12Krpy5WK0" title="&quot;Elegant Interior House Floor walkthrough 🏠 &quot;#architecture #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Elegant Interiors</h3>
+        </div>
+    </section>
+    
+    <script>
+        const speakButton = document.getElementById('speakBtn');
+        const textToSpeak = "Welcome to our house renovation services. Transform your home with innovative designs and expert craftsmanship. Explore our highlights and get inspired.";
+
+        speakButton.addEventListener('click', () => {
+            const speech = new SpeechSynthesisUtterance();
+            speech.text = textToSpeak;
+            speech.rate = 1;
+            speech.pitch = 1;
+            speech.volume = 1;
+            speech.lang = 'en-US';
+            window.speechSynthesis.speak(speech);
+        });
+    </script>
+
+<!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-contact">
+                    <h2>Office Contact</h2>
+                    <p><i class="fa fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/eLEik9deA7rwNAaz5" target="_blank">Share Location</a></p>
+                    <p><i class="fa fa-phone-alt"></i><a href="tel:+919848945713">+91 9848945713</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+                    <div class="footer-social">
+                        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-link">
+                    <h2>Services Areas</h2>
+                    <a href="BuildingMetirials.html">Building Metirials</a>
+                    <a href="House_Renovation.html">House Renovation</a>
+                    <a href="ArchitectureDesign.html">Architecture Design</a>
+                    <a href="InteriorDesign.html">Interior Design</a>
+                    <a href="#">Painting</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-link">
+                    <h2>Useful Pages</h2>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="portfolio.html">Projects</a>
+                    <a href="Testimonial.html">Testimonial</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Stay updated with the latest news, exclusive offers, and exciting updates by subscribing to our newsletter!</p>
+                    <div class="form">
+                        <footer class="footer">
+                            <div class="newsletter">
+                                <input class="form-control" placeholder="Email here" type="email" id="emailInput">
+                                <button class="btn" type="submit" id="sendMessageButton">Subscription</button>
+                                <div id="messageBox" class="message-box"></div>
+                            </div>
+                        </footer>
+                    
+                        <script>
+                            document.getElementById('sendMessageButton').addEventListener('click', function(e) {
+                                e.preventDefault(); // Prevent form submission
+                    
+                                var emailInput = document.getElementById('emailInput').value;
+                                var messageBox = document.getElementById('messageBox');
+                    
+                                // Show the message box
+                                messageBox.style.display = 'block';
+                    
+                                // Display the message
+                                if (emailInput) {
+                                    messageBox.textContent = "Thank you for subscribing!";
+                                } else {
+                                    messageBox.textContent = "Please enter a valid email.";
+                                }
+                    
+                                // Define the colors for blinking
+                                const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
+                                let colorIndex = 0;
+                    
+                                // Blinking effect
+                                let blinkInterval = setInterval(function() {
+                                    messageBox.style.color = colors[colorIndex]; // Change text color
+                                    colorIndex = (colorIndex + 1) % colors.length; // Cycle through colors
+                                }, 300); // Change color every 300ms
+                    
+                                // Stop blinking after 9 seconds and hide the message box
+                                setTimeout(function() {
+                                    clearInterval(blinkInterval); // Stop blinking
+                                    messageBox.style.display = 'none'; // Hide the message box
+                                }, 4000);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-menu">
+        <div class="f-menu">
+            <a href="TermsOfUse.html">Terms of use</a>
+            <a href="Privacy_Policy.html">Privacy policy</a>
+            <a href="FAQs.html">FAQs</a>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">Purple House</a> 2025 All Right Reserved.</p>
+            </div>
+
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <div class="col-md-6">
+                <p>Designed By <a href="#">MAHESHWER_CHOWDEYKARI</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="index.html" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
+

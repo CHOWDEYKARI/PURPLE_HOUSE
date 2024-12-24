@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Construction FAQs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Construction Company Website Template" name="keywords">
+    <meta content="Construction Company Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">    
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+
+        .faq-container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .faq-title {
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            background-color: #0078d7;
+            color: #fff;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .faq-item {
+            border-bottom: 2px solid #ccc;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .faq-item:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.02);
+        }
+
+        .faq-question {
+            color: red;
+            padding: 15px;
+            font-size: 1.2em;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            border-left: 5px solid #0078d7;
+        }
+
+        .faq-answer {
+
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            background-color: #eef2f3;
+            padding: 0 15px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            padding: 15px 0;
+            line-height: 1.6;
+            color: blue;
+        }
+
+        .icon {
+            font-size: 1.5em;
+            color: #0078d7;
+            transition: transform 0.3s;
+        }
+
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        @media (max-width: 768px) {
+            .faq-title {
+                font-size: 1.5em;
+            }
+
+            .faq-question {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html"><img src="./logo2.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Opening Hours</h3>
+                                        <p>Mon To Fri.<br> 08:00 AM - 08:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Call Us</h3>
+                                        <p><a href="tel:+919848945713">+91 9848945713</a></p>
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-send-mail"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email Us</h3>
+                                        <p><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+                                    </div>
+                                    <!-- Share Location Section -->
+                                    <div class="top-bar-text">
+                                        <i class="fas fa-map-marker-alt icon"></i> <!-- Location Icon -->
+                                        <h3>Share Location</h3>
+                                        <p><a href="https://maps.app.goo.gl/eLEik9deA7rwNAaz5" target="_blank">Share Location</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="team.html" class="nav-item nav-link">Team</a>
+                            <a href="portfolio.html" class="nav-item nav-link">Project</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="blog.html" class="dropdown-item">Blog Page</a>
+                                    <a href="single.html" class="dropdown-item">Single Page</a>
+                                </div>
+                            </div> -->
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                        <!-- Navbar Links -->
+                        <div class="links">
+                            <a href="./index.html" class="home">Home</a>
+                            <a href="./SignUpLogin.html" class="back">Back</a>
+                            <a href="./service.html" class="forward">Forward</a>
+                            <a href="./SignUpLogin.html" class="signup">SignUp/Login</a>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+    <div class="faq-container">
+        <div class="faq-title">Frequently Asked Questions - Building Constructions</div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q1: What is the estimated cost of building a house? <span
+                    class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>The cost depends on the size, design, materials used, and location. Consult with a contractor for
+                    precise estimates.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q2: How long does it take to construct a building? <span
+                    class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>Construction time varies depending on the project size, complexity, and weather conditions. A
+                    standard home may take 6-12 months.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q3: What permits are required for building construction? <span
+                    class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>Permits vary by location but commonly include zoning, building, and environmental permits.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q4: What materials are best for construction? <span class="icon">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                <p>Materials depend on the building type, budget, and climate. Options include bricks, concrete, steel,
+                    and wood.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q5: Can I make changes during construction? <span class="icon">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, but changes may increase costs and delay the timeline. It is best to finalize the design
+                    beforehand.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q6: How do I select the right contractor? <span class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>Check the contractor's experience, references, licensing, and past projects. Compare quotes and
+                    agreements carefully.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q7: What safety measures are followed during construction? <span
+                    class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>Ensure compliance with safety regulations, proper use of equipment, and training for workers to
+                    minimize risks.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q8: How can I ensure quality construction? <span class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>Hire reputable professionals, use quality materials, and regularly inspect the construction site.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q9: What is the role of an architect in construction? <span
+                    class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>An architect designs the layout, ensures functionality, and oversees aesthetics, complying with
+                    building codes.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Q10: How can I reduce construction costs? <span class="icon">&#9660;</span></div>
+            <div class="faq-answer">
+                <p>Optimize the design, use local materials, hire efficient workers, and avoid last-minute changes.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const speechSynthesis = window.speechSynthesis;
+
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('.icon');
+                answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + 'px';
+                icon.classList.toggle('rotate');
+
+                if (answer.style.maxHeight) {
+                    const textToSpeak = answer.textContent.trim();
+                    const utterance = new SpeechSynthesisUtterance(textToSpeak);
+                    speechSynthesis.speak(utterance);
+                } else {
+                    speechSynthesis.cancel();
+                }
+            });
+        });
+    </script>
+
+<!-- Footer Start -->
+<div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-contact">
+                    <h2>Office Contact</h2>
+                    <p><i class="fa fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/eLEik9deA7rwNAaz5" target="_blank">Share Location</a></p>
+                    <p><i class="fa fa-phone-alt"></i><a href="tel:+919848945713">+91 9848945713</a></p>
+                    <p><i class="fa fa-envelope"></i><a href="mailto:maheshwer.chowdeykari@gmail.com">maheshwer.chowdeykari@gmail.com</a></p>
+                    <div class="footer-social">
+                        <a href="https://x.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-link">
+                    <h2>Services Areas</h2>
+                    <a href="BuildingMetirials.html">Building Metirials</a>
+                    <a href="House_Renovation.html">House Renovation</a>
+                    <a href="ArchitectureDesign.html">Architecture Design</a>
+                    <a href="InteriorDesign.html">Interior Design</a>
+                    <a href="#">Painting</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="footer-link">
+                    <h2>Useful Pages</h2>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="portfolio.html">Projects</a>
+                    <a href="Testimonial.html">Testimonial</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="newsletter">
+                    <h2>Newsletter</h2>
+                    <p>Stay updated with the latest news, exclusive offers, and exciting updates by subscribing to our newsletter!</p>
+                    <div class="form">
+                        <footer class="footer">
+                            <div class="newsletter">
+                                <input class="form-control" placeholder="Email here" type="email" id="emailInput">
+                                <button class="btn" type="submit" id="sendMessageButton">Subscription</button>
+                                <div id="messageBox" class="message-box"></div>
+                            </div>
+                        </footer>
+                    
+                        <script>
+                            document.getElementById('sendMessageButton').addEventListener('click', function(e) {
+                                e.preventDefault(); // Prevent form submission
+                    
+                                var emailInput = document.getElementById('emailInput').value;
+                                var messageBox = document.getElementById('messageBox');
+                    
+                                // Show the message box
+                                messageBox.style.display = 'block';
+                    
+                                // Display the message
+                                if (emailInput) {
+                                    messageBox.textContent = "Thank you for subscribing!";
+                                } else {
+                                    messageBox.textContent = "Please enter a valid email.";
+                                }
+                    
+                                // Define the colors for blinking
+                                const colors = ["red", "blue", "green", "yellow", "orange", "purple"];
+                                let colorIndex = 0;
+                    
+                                // Blinking effect
+                                let blinkInterval = setInterval(function() {
+                                    messageBox.style.color = colors[colorIndex]; // Change text color
+                                    colorIndex = (colorIndex + 1) % colors.length; // Cycle through colors
+                                }, 300); // Change color every 300ms
+                    
+                                // Stop blinking after 9 seconds and hide the message box
+                                setTimeout(function() {
+                                    clearInterval(blinkInterval); // Stop blinking
+                                    messageBox.style.display = 'none'; // Hide the message box
+                                }, 4000);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-menu">
+        <div class="f-menu">
+            <a href="TermsOfUse.html">Terms of use</a>
+            <a href="Privacy_Policy.html">Privacy policy</a>
+            <a href="FAQs.html">FAQs</a>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="#">Purple House</a> 2025 All Right Reserved.</p>
+            </div>
+
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <div class="col-md-6">
+                <p>Designed By <a href="#">MAHESHWER_CHOWDEYKARI</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<a href="index.html" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/slick/slick.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
